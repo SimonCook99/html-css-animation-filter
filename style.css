@@ -27,7 +27,6 @@ body{
 
 .square-container{
     width: 100%;
-    height: 140px;
     background-color: #F5F5F5;
     border: 1px solid lightgrey;
 }
@@ -99,4 +98,51 @@ body{
 
 .square-container .fifth.square:active{
     transform: scale(0.5, 0.5);
+}
+
+
+/* inizio esercizio 6*/
+.image-container{
+    background-color: #F5F5F5;
+}
+
+.image-container img{
+    margin: 20px;
+    max-width: 50%;
+    max-height: calc(100% - 40px);
+}
+
+.image-container .sixth:hover{
+    filter: grayscale(1);
+}
+
+/* inizio esercizio 7*/
+.image-container .seventh{
+    transition: all 2s;
+}
+
+.image-container .seventh:hover{
+    filter: sepia(0.7) grayscale(0.3);
+}
+
+/* inizio esercizio 8*/
+.image-container .eighth{
+    transition: all 2s;
+}
+
+.image-container .eighth:hover{
+    filter: sepia(0.7) grayscale(0.3);
+    border-radius: 20px;
+}
+
+/* inizio esercizio 9*/
+.image-container .ninth{
+    transform: scale(0.7, 0.7);
+    transition: all 2s;
+}
+
+.image-container .ninth:hover{
+    filter: sepia(0.7) grayscale(0.3);
+    border-radius: 30px;
+    transform: scale(1, 1);
 }
