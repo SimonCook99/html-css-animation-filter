@@ -15,6 +15,10 @@ body{
     margin-bottom: 100px;
 }
 
+.container p{
+    margin: 30px 0px;
+}
+
 
 /* .esercizio{
     width: 100%;
@@ -23,18 +27,76 @@ body{
 
 .square-container{
     width: 100%;
+    height: 140px;
     background-color: #F5F5F5;
     border: 1px solid lightgrey;
 }
 
-.square-container .first-square{
+/*classse in comune dei quadrati*/
+.square-container .square{
     width: 100px;
     height: 100px;
     margin: 20px;
+}
+
+
+/* inizio esercizio 1*/
+.square-container .first.square{
+    width: 100px;
+    height: 100px;
     border: 1px solid red;
     transition: all 2s;
 }
 
-.first-square:hover{
+.first.square:hover{
     background-color: red;
+}
+
+
+/* inizio esercizio 2*/
+.square-container .second.square{
+    background-color: red;
+    transition: width 2s;
+}
+
+.square-container .second.square:active{
+    width: calc(100% - 40px);
+}
+
+
+/* inizio esercizio 3*/
+.square-container .third.square{
+    background-color: red;
+    transition: border-radius 0.5s;
+}
+
+.square-container .third.square:hover{
+    border-radius: 50%;
+}
+
+/* inizio esercizio 4*/
+.square-container .fourth.square{
+    background-color: red;
+    transition: opacity 1s;
+}
+
+.square-container .fourth.square:hover{
+    opacity: 0;
+}
+
+/* inizio esercizio 5*/
+.square-container .fifth.square{
+    width: 50px;
+    height: 50px;
+    margin: 40px;
+    background-color: red;
+    transition: all 1s;
+}
+
+.square-container .fifth.square:hover{
+    transform: scale(2.5,2.5);
+}
+
+.square-container .fifth.square:active{
+    transform: scale(0.5, 0.5);
 }
