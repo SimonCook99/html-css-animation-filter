@@ -221,7 +221,7 @@ body{
 
 .button .transparent-block{
     width: 50px;
-    height: 10px;
+    height: 20px;
     background-color: #F5F5F5;
     display: inline-block;
 }
@@ -275,4 +275,77 @@ body{
 
 
 /* inizio esercizio 13*/
+/* animazione blocco sopra*/
+#tredicesimo-esercizio .button:hover .up{
+    animation: up-rotation 2s linear;
+}
+
+@keyframes up-rotation{
+    0%{
+        top: -5px;
+        left: 15px;
+    }
+
+    20%{
+        top: -5px;
+        left: calc(100% - 40px);
+    }
+
+    40%{
+        top: 98%;
+        left: calc(100% - 40px);
+    }
+
+    60%{
+        top: 98%;
+        left: -5px;
+    }
+
+    80%{
+        top: -5px;
+        left: -5px;
+    }
+
+    100%{
+        top: -5px;
+        left: 15px;
+    }
+}
+
+/* animazione blocco sotto*/
+#tredicesimo-esercizio .button:hover .down{
+    animation: down-rotation 2s linear;
+}
+
+@keyframes down-rotation{
+    0%{
+        bottom: -5px;
+        right: 30px;
+    }
+
+    20%{
+        bottom: -5px;
+        right: calc(100% - 40px);
+    }
+
+    40%{
+        bottom: 100%;
+        right: calc(100% - 40px);
+    }
+
+    60%{
+        bottom: 100%;
+        right: -5px;
+    }
+
+    80%{
+        bottom: -5px;
+        right: -5px;
+    }
+
+    100%{
+        bottom: -5px;
+        right: 30px;
+    }
+}
 
