@@ -102,8 +102,10 @@ body{
 
 
 /* inizio esercizio 6*/
+/* classe in comune tra i contenitori delle immagini*/
 .image-container{
     background-color: #F5F5F5;
+    border: 1px solid lightgrey;
 }
 
 .image-container img{
@@ -146,3 +148,128 @@ body{
     border-radius: 30px;
     transform: scale(1, 1);
 }
+
+
+/* inizio esercizio 10*/
+
+.icon-container{
+    background-color: #F5F5F5;
+    border: 1px solid lightgrey;
+}
+
+.icon-container i{
+    margin: 20px;
+    font-size: 60px;
+    color: #333333;
+}
+
+.icon-container i.tenth{
+    animation: loading 1s linear 0s infinite;
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+/* inizio sercizio 11*/
+.icon-container i.eleventh:hover{
+    animation: acceleration 2s linear;
+}
+
+@keyframes acceleration{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(280deg);
+    }
+
+    85%{ /* ruotazione in senso antiorario accelerata*/
+        transform: rotate(0deg);
+    }
+}
+
+
+/* inizio esercizio 12*/
+.button-container{
+    background-color: #F5F5F5;
+    border: 1px solid lightgrey;
+}
+
+.button-container .button{
+    margin: 20px;
+    width: 150px;
+    padding: 20px;
+    height: calc(100% - 40px);
+    border: 3px solid #1b3c59;
+    text-align: center;
+    position: relative;
+    
+}
+
+.button-container .button a{
+    text-decoration: none;
+    color: #1b3c59;
+    font-size: 23px;
+}
+
+.button .transparent-block{
+    width: 50px;
+    height: 10px;
+    background-color: #F5F5F5;
+    display: inline-block;
+}
+
+.button .up.transparent-block{
+    position: absolute;
+    top: -5px;
+    left: 15px;
+}
+
+.button .down.transparent-block{
+    position: absolute;
+    bottom: -5px;
+    right: 30px;
+}
+
+@keyframes up-move{
+    0%{
+        left: 15px;
+    }
+
+    50%{
+        left: calc(100% - 50px) ;
+    }
+
+    100%{
+        left: 15px;
+    }
+}
+
+.button-container .button:hover .up{
+    animation: up-move 2s linear;
+}
+.button-container .button:hover .down{
+    animation: down-move 2s linear;
+}
+
+@keyframes down-move{
+    0%{
+        right: 30px;
+    }
+
+    50%{
+        right: calc(100% - 50px) ;
+    }
+
+    100%{
+        right: 30px;
+    }
+}
+
