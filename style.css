@@ -252,10 +252,10 @@ body{
     }
 }
 
-.button-container .button:hover .up{
+.button:hover .up{
     animation: up-move 2s linear;
 }
-.button-container .button:hover .down{
+.button:hover .down{
     animation: down-move 2s linear;
 }
 
@@ -272,4 +272,7 @@ body{
         right: 30px;
     }
 }
+
+
+/* inizio esercizio 13*/
 
